@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.StackPane?>
 
 
-<StackPane fx:controller="com.example.demogit.LayoutProvaController" maxHeight="-Infinity"
+<StackPane fx:controller="com.example.demogit.controller.LivingRoomController" maxHeight="-Infinity"
            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0"
            prefWidth="947.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>

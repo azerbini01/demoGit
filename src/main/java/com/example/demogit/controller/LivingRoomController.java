@@ -1,11 +1,11 @@
-package com.example.demogit;
+package com.example.demogit.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 
-public class LayoutProvaController {
+public class LivingRoomController {
 
     @FXML
     StackPane place1;

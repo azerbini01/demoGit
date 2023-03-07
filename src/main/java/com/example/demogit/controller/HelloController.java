@@ -1,4 +1,4 @@
-package com.example.demogit;
+package com.example.demogit.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

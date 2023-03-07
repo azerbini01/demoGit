@@ -7,4 +7,6 @@ module com.example.demogit {
 
     opens com.example.demogit to javafx.fxml;
     exports com.example.demogit;
+    exports com.example.demogit.controller;
+    opens com.example.demogit.controller to javafx.fxml;
 }
