@@ -12,9 +12,11 @@ public class WaitingRoomController {
 
     @FXML
     public void onContinueButtonClick(ActionEvent actionEvent) {
+        //start the game
     }
 
     @FXML
     public void onGoBackButtonClick(ActionEvent actionEvent) {
+        //is it necessary?
     }
 }

@@ -23,7 +23,7 @@ public class LobbyController {
             e.printStackTrace();
         }
         Stage stage = Board.getCurrentStage();
-        stage.setTitle("Game started!");
+        stage.setTitle("Set number of players");
         stage.setScene(scene);
         stage.show();
     }

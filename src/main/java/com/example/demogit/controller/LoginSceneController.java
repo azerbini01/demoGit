@@ -25,7 +25,7 @@ public class LoginSceneController {
             e.printStackTrace();
         }
         Stage stage = Board.getCurrentStage();
-        stage.setTitle("Game started!");
+        stage.setTitle("Set number of players");
         stage.setScene(scene);
         stage.show();
     }
@@ -41,7 +41,7 @@ public class LoginSceneController {
             e.printStackTrace();
         }
         Stage stage = Board.getCurrentStage();
-        stage.setTitle("Game started!");
+        stage.setTitle("Wait for others to join");
         stage.setScene(scene);
         stage.show();
     }

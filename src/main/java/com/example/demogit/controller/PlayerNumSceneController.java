@@ -40,7 +40,7 @@ public class PlayerNumSceneController {
             e.printStackTrace();
         }
         Stage stage = Board.getCurrentStage();
-        stage.setTitle("Game started!");
+        stage.setTitle("Set your nickname");
         stage.setScene(scene);
         stage.show();
     }
@@ -55,7 +55,7 @@ public class PlayerNumSceneController {
             e.printStackTrace();
         }
         Stage stage = Board.getCurrentStage();
-        stage.setTitle("Game started!");
+        stage.setTitle("Back in the lobby!");
         stage.setScene(scene);
         stage.show();
     }
