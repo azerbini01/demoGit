@@ -2,18 +2,20 @@ package com.example.demogit.controller;
 
 import com.example.demogit.HelloApplication;
 import com.example.demogit.model.Board;
-import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LobbyController {
+public class LoginSceneController {
     @FXML
-    protected void onPlayButtonClick() {
+    TextField nicknameField;
+
+    @FXML
+    protected void onGoBackButtonClick() {
         //start game
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("player_num_scene.fxml"));
         Scene scene = null;
@@ -29,8 +31,18 @@ public class LobbyController {
     }
 
     @FXML
-    protected void onExitButtonClick() {
-        //end game
-        Platform.exit();
+    protected void onContinueButtonClick() {
+        //start game
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("waiting_room.fxml"));
+        Scene scene = null;
+        try {
+            scene = new Scene(fxmlLoader.load());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage stage = Board.getCurrentStage();
+        stage.setTitle("Game started!");
+        stage.setScene(scene);
+        stage.show();
     }
 }
