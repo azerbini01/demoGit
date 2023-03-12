@@ -3,6 +3,10 @@ package com.example.demogit.model;
 import javafx.stage.Stage;
 
 public class Board {
+
+    /**
+     * Singleton class
+     */
     private static Stage currentStage;
 
     public static void initBoard() {

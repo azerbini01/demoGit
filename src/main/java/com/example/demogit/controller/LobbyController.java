@@ -2,7 +2,6 @@ package com.example.demogit.controller;
 
 import com.example.demogit.HelloApplication;
 import com.example.demogit.model.Board;
-import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,6 +11,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class LobbyController {
+
     @FXML
     protected void onPlayButtonClick() {
         //start game

@@ -1,6 +1,5 @@
 package com.example.demogit;
 
-import com.example.demogit.model.Board;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,17 +9,12 @@ import java.io.IOException;
 
 public class HelloApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        // Create new board
-        Board.initBoard();
-        //load lobby
+    public void start(Stage primaryStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("lobby.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Simone was here!");
-        stage.setScene(scene);
-        stage.show();
-        //set lobby as current stage
-        Board.setCurrentStage(stage);
+        primaryStage.setTitle("My shelfie!");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     public static void main(String[] args) {
