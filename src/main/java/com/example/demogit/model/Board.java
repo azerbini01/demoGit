@@ -2,6 +2,9 @@ package com.example.demogit.model;
 
 import javafx.stage.Stage;
 
+/**
+ * This class represents the current board used to play the game.
+ */
 public class Board {
 
     /**
